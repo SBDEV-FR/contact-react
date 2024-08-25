@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Application de Gestion de Contacts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+L'Application de Gestion de Contacts est une solution web moderne développée avec React.js. Elle offre une interface utilisateur intuitive et réactive pour gérer efficacement les informations de contact. Cette application permet aux utilisateurs d'ajouter, de modifier, de supprimer et de visualiser des contacts. Chaque contact comprend un nom, un numéro de téléphone et une adresse email.
 
-In the project directory, you can run:
+L'interface est divisée en deux sections principales : 
+- **Formulaire de saisie (gauche)** : Permet d'ajouter ou de modifier des contacts.
+- **Tableau de contacts (droite)** : Affiche la liste des contacts existants.
 
-### `npm start`
+### Fonctionnalités clés
+- **Validation en temps réel** : Les entrées utilisateur sont validées avec des messages d'erreur en français pour les formats de numéro de téléphone et d'email.
+- **Recherche de contacts** : Les utilisateurs peuvent rechercher des contacts à travers tous les champs (nom, téléphone, email).
+- **Tri des contacts** : Les contacts peuvent être triés par nom, téléphone ou email, en ordre croissant ou décroissant.
+- **Persistance des données** : Les données sont stockées dans le `localStorage`, permettant de conserver les contacts même après la fermeture du navigateur.
+- **Interface responsive** : L'application s'adapte aux différentes tailles d'écran pour une utilisation optimale sur tous les dispositifs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Utilisées
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend
 
-### `npm test`
+- **React.js**
+  - Utilisation des Hooks (`useState`, `useEffect`, `useCallback`) pour gérer l'état local et les effets de bord.
+  - Rendu conditionnel pour l'affichage dynamique des composants.
+  - Manipulation de listes avec la méthode `map()`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **JavaScript ES6+**
+  - Fonctions fléchées et déstructuration pour un code plus concis et lisible.
+  - Méthodes de tableau (`map`, `filter`, `sort`) pour la manipulation efficace des données.
+  - Utilisation de l'opérateur de propagation (`spread`) pour la gestion des objets et des tableaux.
 
-### `npm run build`
+- **Gestion des Formulaires**
+  - Contrôle des entrées utilisateur et validation des formulaires.
+  - Utilisation d'expressions régulières (Regex) pour la validation d'email et de numéro de téléphone.
+  - Affichage de messages d'erreur personnalisés en cas de saisie incorrecte.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Manipulation du DOM**
+  - Gestion des événements pour une interaction utilisateur fluide.
+  - Mise à jour dynamique de l'interface en réponse aux actions de l'utilisateur.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Stockage local**
+  - Utilisation de `localStorage` pour la persistance des données entre les sessions de navigation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### CSS
 
-### `npm run eject`
+- **Mise en page responsive**
+  - Utilisation de Flexbox pour une mise en page flexible et responsive.
+  - Stylisation moderne de l'application pour une expérience utilisateur agréable sur tous les dispositifs.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Fonctionnalités CRUD
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+L'application permet la gestion complète des contacts :
+- **Créer** un nouveau contact
+- **Lire** la liste des contacts existants
+- **Mettre à jour** les informations d'un contact
+- **Supprimer** un contact
+- 
+![image](https://github.com/user-attachments/assets/25db6c28-a948-4fdc-8798-3228477f6756)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Modification des contacts : 
+![image](https://github.com/user-attachments/assets/dba7a1c8-4ad7-4380-a596-e38e40aeb312)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
