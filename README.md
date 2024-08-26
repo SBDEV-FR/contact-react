@@ -1,4 +1,10 @@
 # Application de Gestion de Contacts
+  
+![image](https://github.com/user-attachments/assets/25db6c28-a948-4fdc-8798-3228477f6756)
+
+Modification des contacts : 
+![image](https://github.com/user-attachments/assets/dba7a1c8-4ad7-4380-a596-e38e40aeb312)
+
 
 ## Description
 
@@ -54,9 +60,4 @@ L'application permet la gestion complète des contacts :
 - **Lire** la liste des contacts existants
 - **Mettre à jour** les informations d'un contact
 - **Supprimer** un contact
-- 
-![image](https://github.com/user-attachments/assets/25db6c28-a948-4fdc-8798-3228477f6756)
-
-Modification des contacts : 
-![image](https://github.com/user-attachments/assets/dba7a1c8-4ad7-4380-a596-e38e40aeb312)
 
